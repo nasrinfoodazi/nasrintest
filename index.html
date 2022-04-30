@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comming soon</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/bootstrab/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">-->
+</head>
+
+<body>
+    <section class="joft6-main-page">
+        <header>
+
+            <div class="joft6_logo col-6 d-flex flex-justify-start ">
+                <a href="">
+                    <img src="assets/image/logo/joft6_logo.png" class="img-fluid d-block" alt="...">
+                </a>
+            </div>
+            <div class="col-6 ">
+                <a href="#" class="js-joft6-nav-toggle joft6-nav-toggle"><i></i></a>
+            </div>
+        </header>
+        <section class="hero-wrap js-fullheight">
+            <div class="container-fluid px-0">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true" style="height: 714px;">
+                    <div class="col-md-12 ftco-animate text-center fadeInUp ftco-animated">
+                        <div class="desc">
+                            <img src="assets/image/logo/logo1.png" alt="">
+                            <h1 style="background-image:url(assets/image/slider/xbg_1.jpg.pagespeed.ic.ltMZNBBdhK.webp)">joft6</h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper_joft6_intro">
+            <div class="joft6_titel">
+                <h2>products</h2>
+                <h5>Joft-6 is looking to combine designs and concepts based on Persian history such as the Zoroastrian time in a combination with all kinds of historical events of relevance, political figures that have left an important legacy and also Iranian Pop artists. This is the perfect blend that creates a unique concept for our Fashion Design.</h5>
+            </div>
+            <div class="joft6_intro">
+
+                <div class="col-md-3 col-12">
+                    <div class="img-pro"></div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="img-pro"></div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="img-pro"></div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="product-wrapper">
+            <div class="container-fluid">
+                <div class="options">
+
+                    <div class="option active"></div>
+                    <div class="option "></div>
+                    <div class="option "></div>
+                    <div class="option "></div>
+                                          
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- js -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+
+    <script src="assets/bootstrab/js/bootstrap.min.js"></script>
+    <script>
+        const slides = document.querySelectorAll('.option');
+        slides.forEach((slide) =>{
+            slide.addEventListener('click', (ev) =>{
+                slides.forEach(slide => slide.classList.remove('active'))
+                slide.classList.add('active')
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,538 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+.tixox_container {
+    padding: 0 2%;
+}
+
+/* General */
+.d-flex {
+    display: flex;
+}
+
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.flex-justify-around {
+    justify-content: space-around;
+}
+
+.flex-justify-end {
+    justify-content: flex-end
+}
+
+.flex-justify-start {
+    justify-content: flex-start
+}
+
+.flex-justify-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-align-center {
+    justify-content: center;
+}
+
+.flex-align-end {
+
+    justify-content: flex-start;
+}
+
+.flex-align-stard {
+
+    justify-content: flex-start;
+}
+
+.flex-column-dir {
+    flex-direction: column;
+}
+
+.flex-row-dir {
+    flex-direction: row;
+}
+
+.bd {
+    border: 1px solid #000;
+}
+
+/* ul/li */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* a */
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ff0000;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: 1s;
+}
+
+a:hover {
+    color: #05314b
+}
+
+/* color */
+.light-red {
+    color: #f6aca1;
+}
+
+.red {
+    color: #ff0000
+}
+
+.yellow {
+    color: #ffcc00
+}
+
+.brown {
+    color: #a67e74;
+}
+
+.light-brown {
+    color: #f5eccf
+}
+
+.figure {
+    margin: 0;
+}
+
+/* HEADER */
+head {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    position: relative
+}
+
+
+#joft6-main-nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.99);
+    z-index: 1002;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    overflow-y: scroll;
+}
+
+.joft6-nav-toggle {
+    float: right;
+    z-index: 1003;
+    position: relative;
+    top: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+
+
+/*/===================header================*/
+header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    margin: 0 auto;
+}
+
+.joft6_logo {
+    display: block
+}
+
+.joft6_logo img {
+    height: 150px;
+    display: inline-block;
+
+}
+
+.joft6-nav-toggle:hover,
+.joft6-nav-toggle:focus,
+.joft6-nav-toggle:active {
+    outline: none;
+    border-bottom: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #69779b;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.joft6-nav-toggle {
+
+    z-index: 1003;
+    position: relative;
+    top: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.joft6-nav-toggle {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.joft6-nav-toggle i {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    color: #fff;
+    font: bold 14px/.4 Helvetica;
+    text-transform: uppercase;
+    text-indent: -55px;
+    background: #fff;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.joft6-nav-toggle:hover i::before {
+    top: -15px;
+}
+
+.joft6-nav-toggle i::before {
+    top: -7px;
+}
+
+.joft6-nav-toggle i::before,
+.joft6-nav-toggle i::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.joft6-nav-toggle:hover i::after {
+    bottom: -10px;
+}
+
+.joft6-nav-toggle i::after {
+    bottom: -7px;
+}
+
+.joft6-nav-toggle i::before,
+.joft6-nav-toggle i::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.justify-content-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.hero-wrap {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero-wrap {
+    width: 100%;
+    height: 100%;
+    -webkit-animation: myanimation 20s infinite;
+    animation: myanimation 20s infinite;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate3d(0, 40px, 0);
+        transform: translate3d(0, 40px, 0);
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes myanimation {
+    0% {
+        background-color: #F2ADEB;
+    }
+
+    25% {
+        background-color: #EDAE41;
+    }
+
+    50% {
+        background-color: #0E319C;
+    }
+
+    75% {
+        background-color: #A91733;
+    }
+
+    100% {
+        background-color: #44D499;
+    }
+}
+
+.hero-wrap {
+    width: 100%;
+    height: 100%;
+    -webkit-animation: myanimation 20s infinite;
+    animation: myanimation 20s infinite;
+}
+
+.ftco-animate {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.ftco-animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.slider-text h1 {
+    font-size: 200px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    /*    font-family: "Abril Fatface", cursive;*/
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    -o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*
+.slider-text .subheading {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 20px;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+.slider-text .subheading-2 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #fff;
+    position: absolute;
+    bottom: -12px;
+    right: 0;
+}
+*/
+
+.slider-text .desc {
+    display: inline-block;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center
+}
+
+.slider-text .desc img {
+    width: 250px;
+}
+
+/*==============wrapper_joft6_intro===========*/
+.wrapper_joft6_intro {
+    position: relative;
+    padding: 4rem 3rem;
+    background-color: #fff;
+    top: -100px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    overflow: hidden
+}
+
+.wrapper_joft6_intro::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: border 1px solid red;
+    right: -88px;
+    background-image: url('../image/J6_Design12_Print_Front%20-%20Copy.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.joft6_titel {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.joft6_titel h2 {
+    text-transform: uppercase;
+    margin: 2rem 0;
+    color: #EDAE41;
+    font-size: 3.5rem;
+    font-weight: bold
+}
+
+.joft6_titel h5 {
+    width: 70%;
+    font-size: 12px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .5);
+}
+
+.joft6_intro {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 0;
+
+
+}
+
+.joft6_intro > div {
+    flex-basis: 30%;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    overflow: hidden
+}
+
+.img-pro {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 265px;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+}
+
+.joft6_intro > div:nth-child(3) > .img-pro {
+    background-image: url('../image/shirt%201.jpeg');
+}
+
+.joft6_intro > div:nth-child(2) > .img-pro {
+    background-image: url('../image/shirt%202.jpeg');
+}
+
+.joft6_intro > div:nth-child(1) > .img-pro {
+    background-image: url('../image/shirt12.jpeg');
+}
+
